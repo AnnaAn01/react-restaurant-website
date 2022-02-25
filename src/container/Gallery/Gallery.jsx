@@ -17,11 +17,13 @@ const Gallery = () => {
     const { current } = scrollRef;
 
     if (direction === "left") {
-      current.sccrollLeft -= 300;
+      current.scrollLeft -= 300;
     } else {
-      current.scrollRight += 300;
+      current.scrollLeft += 300;
     }
-  }
+  };
+
+
 
   return (
     <div className="app__gallery flex__center">
@@ -41,7 +43,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-        <div className="app__gallery-images_arrow">
+        <div className="app__gallery-images_arrows">
           <BsArrowLeftShort className="gallery__arrow-icon" onClick={() => scroll("left")} />
           <BsArrowRightShort className="gallery__arrow-icon" onClick={() => scroll("right")} />
         </div>
