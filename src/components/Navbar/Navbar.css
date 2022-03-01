@@ -90,14 +90,14 @@
 .app__navbar-smallscreen_links li {
   margin: 2rem;
   cursor: pointer;
-  color: var(--color-golden);
+  color: #dcca87;
   font-size: 2rem;
   text-align: center;
   font-family: var(--font-base);
 }
 
 .app__navbar-smallscreen_links li:hover {
-  color: var(--color-white);
+  color: #ffffff;
 }
 
 @media screen and (max-width: 2000px) {
